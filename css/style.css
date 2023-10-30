@@ -10,11 +10,12 @@ Default: 400
 Default: 1
 
 --- 02 COLORS
- Primary: #e67e22
+ Primary: #e67e22, #cf711f;
 
 - Tints: #fdf2e9, 
 - Shades:
-- Accents: 
+- Accents:
+- Contrasts:  #59300d 
 - Greys
   #555
   #333
@@ -147,6 +148,7 @@ body {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
+  border: 3px solid #fdf2e9;
   margin-right: -1.6rem;
 }
 
@@ -160,4 +162,9 @@ be behind the photos*/
 .delivered-text {
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.delivered-text span {
+  color: #59300d;
+  font-weight: 700;
 }
