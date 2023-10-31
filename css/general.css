@@ -149,7 +149,9 @@ body {
   /* Must be put on the original "state"
     allows you to use an animation 
     0.3 is standard*/
-  transition: background-color 0.3s;
+  /* use ALL so that the color and the border 
+  transition appropriately */
+  transition: all 0.3s;
 }
 
 .btn-full,
@@ -178,6 +180,10 @@ body {
 /* using !important ensures this style will be used above all others */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
 }
 
 strong {
