@@ -192,10 +192,37 @@ be behind the photos*/
 }
 
 .step-img-box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* before is a pseudo element */
+.step-img-box::before {
+  content: "";
+  display: block;
+  /* use percentage so it's flexible */
+  width: 60%;
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+  background-color: #f3bf91;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* adding a negative value pushes the circle 
+  back in the order of importance...placing it behind the img */
+  z-index: -1;
+}
+
+/* .step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+} */
 
 /* size the image bc it won't be done automatically */
 .step-img {
