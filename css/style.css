@@ -186,7 +186,18 @@ be behind the photos*/
   margin-bottom: 1.2rem;
 }
 
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* size the image bc it won't be done automatically */
 .step-img {
-  width: 50%;
+  width: 35%;
 }
