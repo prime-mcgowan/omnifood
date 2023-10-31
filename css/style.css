@@ -34,7 +34,7 @@ Paragraph default: 1.6
 - unsplash.com
 - uifaces.com
 
---- 04 ICONS
+--- 04 ICONS (https://ionic.io/ionicons/usage, https://heroicons.com)
 
 --- 05 SHADOWS
 
@@ -260,4 +260,34 @@ be behind the photos*/
 /* size the image bc it won't be done automatically */
 .step-img {
   width: 35%;
+}
+
+/*******************************/
+/* MEALS SECTION */
+/*******************************/
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-title {
+  font-size: 2rem;
+  color: #59300d;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+}
+
+.meal-img {
+  width: 100%;
 }
