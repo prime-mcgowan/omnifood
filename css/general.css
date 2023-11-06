@@ -81,6 +81,17 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+/* eliminates the extra margin between How it works and meals */
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* BUT...here is the best way to do it: */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
