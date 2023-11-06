@@ -278,6 +278,15 @@ be behind the photos*/
   /* this ensures that the rounded edges show at the top even 
   though the image is not rounded  */
   overflow: hidden;
+  /* sets the "speed" of the "animation"...in this case
+  how quickly the card moves when hovered over */
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  /* moves the cards when hovered on */
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
@@ -300,7 +309,7 @@ be behind the photos*/
   font-weight: 600;
 }
 
-.tag--vegetarian {
+/* .tag--vegetarian {
   background-color: #51cf66;
 }
 .tag--vegan {
@@ -308,6 +317,17 @@ be behind the photos*/
 }
 .tag--paleo {
   background-color: #ffd43b;
+} */
+
+/* Coolors: #CD533B, #FFFD82, #C5D86D, #acf39d, #fde74c*/
+.tag--vegetarian {
+  background-color: #c0da74;
+}
+.tag--vegan {
+  background-color: #32cbff;
+}
+.tag--paleo {
+  background-color: #e5d1d0;
 }
 
 .meal-title {
@@ -339,6 +359,11 @@ be behind the photos*/
 
 .meal-img {
   width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .list {
