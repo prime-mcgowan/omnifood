@@ -392,6 +392,7 @@ be behind the photos*/
 
 .section-testimonials {
   padding: 9.6rem 0;
+  background-color: #fdf2e9;
 }
 
 .testimonials {
@@ -417,4 +418,17 @@ be behind the photos*/
 .testimonial-name {
   font-size: 1.6rem;
   color: #777;
+}
+
+.gallery {
+  display: grid;
+  /* 3 equal sized columns */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.gallery-item img {
+  /* fixes the white space between images */
+  display: block;
+  width: 100%;
 }
