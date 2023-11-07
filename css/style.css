@@ -505,6 +505,10 @@ be behind the photos*/
   font-weight: 500;
   margin-right: 0.8rem;
 }
+/* 
+.per-month-text span {
+  font-size: 0.5rem;
+} */
 
 .plan-text {
   font-size: 1.6rem;
@@ -515,6 +519,12 @@ be behind the photos*/
 .plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .plan-sign-up--button {
@@ -545,4 +555,38 @@ be behind the photos*/
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/*******************************/
+/* CTA SECTION */
+/*******************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  height: 50rem;
+  border-radius: 11px;
+  /* 90deg, 180deg and 360deg */
+  /* to right, to left, to right bottom, to left bottom or to right top or to left top */
+  background-image: linear-gradient(to right bottom, #eb894e, #e67e22);
+}
+
+.cta-text-box {
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
