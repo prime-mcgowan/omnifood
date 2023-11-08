@@ -575,6 +575,7 @@ be behind the photos*/
   /* 90deg, 180deg and 360deg */
   /* to right, to left, to right bottom, to left bottom or to right top or to left top */
   background-image: linear-gradient(to right bottom, #eb894e, #e67e22);
+  overflow: hidden;
 }
 
 .cta-text-box {
