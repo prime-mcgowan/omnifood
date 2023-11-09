@@ -589,7 +589,21 @@
         so content is too wide and doesn't match up with the other content...
         so by creating another element <div class="cta" the content is lined up correctly-->
           <div class="cta">
-            <div class="cta-text-box">CTA</div>
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form class="cta-form" action="#">
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="Kelly Smith" />
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="smithk@gmail.com" />
+                <button class="btn">Sign up now</button>
+              </form>
+            </div>
             <!-- !The image is in a box so it will not appear on a screen reader without adding role and aria-label-->
             <div
               class="cta-img-box"
