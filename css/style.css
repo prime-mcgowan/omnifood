@@ -22,11 +22,13 @@ Paragraph default: 1.6
 --- 02 COLORS
  Primary: #e67e22, #cf711f;
 
-- Tints: #fdf2e9 (background color for Hero section), 
-- Shades:
+- Tints: #fdf2e9 (background color for Hero section), #fae5d3, #eb984e
+- Shades: #cf711f, #45260a
 - Accents:
 - Contrasts:  #59300d (coolors.co)
-- Greys
+- Greys (darkest to lightest)
+  #888
+  #767676
   #6f6f6f (lightest grey allowed on #fdf2e9)
   #555
   #333
@@ -639,4 +641,65 @@ be behind the photos*/
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 1rem rgba(253, 242, 233, 0.5);
+}
+
+/*******************************/
+/* FOOTER SECTION */
+/*******************************/
+
+.footer {
+  padding: 9.6rem 0;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
