@@ -245,6 +245,12 @@ body {
   color: #e67e22;
 }
 
+/* targeting the blue outline of clicked on inputs */
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.5);
+}
+
 /* !Helper Classes  */
 
 /* using !important ensures this style will be used above all others */
