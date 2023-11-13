@@ -651,6 +651,10 @@ be behind the photos*/
   padding: 9.6rem 0;
 }
 
+.grid--footer {
+  grid-template-columns: 1.25fr 1.25fr 1fr 1fr 1fr;
+}
+
 .logo-col {
   display: flex;
   flex-direction: column;
@@ -672,12 +676,23 @@ be behind the photos*/
 }
 
 .copyright {
+  display: flex;
+  justify-content: center;
   font-size: 1.4rem;
   line-height: 1.6rem;
   color: #767676;
   margin-top: auto;
 }
 
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
 .footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
