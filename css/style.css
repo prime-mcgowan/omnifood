@@ -564,7 +564,10 @@ be behind the photos*/
 /*******************************/
 
 .section-cta {
-  padding: 9.6rem 0;
+  /* top right bottom left */
+  /* 12.8rem matches the padding from the gray line
+  to the footer */
+  padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta {
@@ -648,7 +651,8 @@ be behind the photos*/
 /*******************************/
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
 }
 
 .grid--footer {
