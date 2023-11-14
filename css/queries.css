@@ -220,5 +220,20 @@ Instead, 1rem = 1em = 16px */
     .plan-sign-up--button {
       padding-top: 37px;
     }
+
+    .grid--footer {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col,
+    .address-col {
+      grid-column: span 3;
+    }
+
+    .nav-col {
+      grid-row: 1;
+      grid-column: span 2;
+      margin-bottom: 3.2rem;
+    }
   }
 }
