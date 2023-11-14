@@ -38,7 +38,7 @@ Instead, 1rem = 1em = 16px */
     row-gap: 6.4rem;
   }
 
-  .heading-scondary {
+  .heading-secondary {
     font-size: 3.6rem;
   }
 
@@ -196,6 +196,29 @@ Instead, 1rem = 1em = 16px */
     .grid--3-cols,
     .grid--4-cols {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading-secondary {
+      margin-bottom: 4.8rem;
+    }
+
+    .diets {
+      /* start at 1 and go all the way to the end */
+      grid-column: 1 / -1;
+      /* justify = horizontal self = individual grid item NOT container */
+      justify-self: center;
+    }
+
+    .pricing-plan {
+      width: 80%;
+    }
+
+    .plan-price span {
+      font-size: 2.4rem;
+    }
+
+    .plan-sign-up--button {
+      padding-top: 37px;
     }
   }
 }
