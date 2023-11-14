@@ -127,14 +127,13 @@ Instead, 1rem = 1em = 16px */
     margin-top: 1.2rem;
   }
 
-  /* MOBILE NAVIGATION */
-  .btn-mobile-nav {
-    display: block;
-  }
-
   /*******************************/
   /* MOBILE */
   /*******************************/
+
+  .btn-mobile-nav {
+    display: block;
+  }
 
   .main-nav {
     background-color: rgb(255, 255, 255, 0.97);
@@ -186,5 +185,17 @@ Instead, 1rem = 1em = 16px */
   .main-nav-link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+
+  /*******************************/
+  /* BELOW 700px (Smaller Tablets)*/
+  /*******************************/
+
+  /* 700 / 16px = 43.75 = 44 */
+  @media (max-width: 44em) {
+    .grid--3-cols,
+    .grid--4-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
