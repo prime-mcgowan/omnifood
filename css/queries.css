@@ -186,54 +186,105 @@ Instead, 1rem = 1em = 16px */
   .main-nav-link:visited {
     font-size: 3rem;
   }
+}
 
-  /*******************************/
-  /* BELOW 700px (Smaller Tablets)*/
-  /*******************************/
+/*******************************/
+/* BELOW 700px (Smaller Tablets)*/
+/*******************************/
 
-  /* 700 / 16px = 43.75 = 44 */
-  @media (max-width: 44em) {
-    .grid--3-cols,
-    .grid--4-cols {
-      grid-template-columns: repeat(2, 1fr);
-    }
+/* 700 / 16px = 43.75 = 44 */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .heading-secondary {
-      margin-bottom: 4.8rem;
-    }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
 
-    .diets {
-      /* start at 1 and go all the way to the end */
-      grid-column: 1 / -1;
-      /* justify = horizontal self = individual grid item NOT container */
-      justify-self: center;
-    }
+  .diets {
+    /* start at 1 and go all the way to the end */
+    grid-column: 1 / -1;
+    /* justify = horizontal self = individual grid item NOT container */
+    justify-self: center;
+  }
 
-    .pricing-plan {
-      width: 80%;
-    }
+  .pricing-plan {
+    width: 80%;
+  }
 
-    .plan-price span {
-      font-size: 2.4rem;
-    }
+  .plan-price span {
+    font-size: 2.4rem;
+  }
 
-    .plan-sign-up--button {
-      padding-top: 37px;
-    }
+  .plan-sign-up--button {
+    padding-top: 37px;
+  }
 
-    .grid--footer {
-      grid-template-columns: repeat(6, 1fr);
-    }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
-    .logo-col,
-    .address-col {
-      grid-column: span 3;
-    }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
 
-    .nav-col {
-      grid-row: 1;
-      grid-column: span 2;
-      margin-bottom: 3.2rem;
-    }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/*******************************/
+/* BELOW 544px (mobile)*/
+/*******************************/
+
+/* 550 / 16  = 34.4 = 34 */
+/* All grids will now be in one column */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  /* The (2) has to do with the order of the child in the 
+  container element...we are targeting the second child */
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .section-hero {
+    background-color: #fdf2e9;
+    /* padding: top, left side, bottom, right side */
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
   }
 }
