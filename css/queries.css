@@ -263,19 +263,6 @@ Instead, 1rem = 1em = 16px */
     width: 80%;
   }
 
-  .logos img {
-    height: 1.2rem;
-  }
-
-  /* The (2) has to do with the order of the child in the 
-  container element...we are targeting the second child */
-  .step-img-box:nth-child(2) {
-    grid-row: 1;
-  }
-
-  .step-img-box:nth-child(6) {
-    grid-row: 5;
-  }
   .section-hero {
     background-color: #fdf2e9;
     /* padding: top, left side, bottom, right side */
@@ -287,4 +274,46 @@ Instead, 1rem = 1em = 16px */
   .btn:visited {
     padding: 2.4rem 1.6rem;
   }
+}
+
+.logos img {
+  height: 1.2rem;
+}
+
+/* The (2) has to do with the order of the child in the 
+  container element...we are targeting the second child */
+.step-img-box:nth-child(2) {
+  grid-row: 1;
+}
+
+.step-img-box:nth-child(6) {
+  grid-row: 5;
+}
+
+/* translate allows you to move elements w/o affecting the rest of 
+  the elements around it */
+.step-img-box {
+  transform: translateY(2.4rem);
+}
+
+.testimonials {
+  grid-template-columns: 1fr;
+}
+
+.gallery {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.cta {
+  grid-template-columns: 1fr;
+}
+
+.cta-text-box {
+  padding: 3.2rem;
+}
+
+.cta-img-box {
+  height: 32rem;
+  grid-row: 1;
 }
